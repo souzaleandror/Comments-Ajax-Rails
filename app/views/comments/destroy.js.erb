@@ -1,0 +1,3 @@
+$('#all_comments').html('<%= j render 'posts/show_comments' %>');
+$('#count_comments').html('<h4><%= escape_javascript( pluralize(@post.comments.size, " Comments")) %></h4>');
+$('#feedback_destroy_comment').show(500).delay(1500).hide(500);

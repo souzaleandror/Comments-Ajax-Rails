@@ -1,0 +1,8 @@
+<% if @comment.errors.empty? %>
+  $('#all_comments').html('<%= j render 'posts/show_comments' %>');
+	$('#new_comment')[0].reset();
+  $('#count_comments').html('<h4><%= escape_javascript( pluralize(@post.comments.size, " Comments")) %></h4>');
+  $('#feedback_create_comment').show(500).delay(1500).hide(500);	
+<% else %>
+	//alert('Comments nao was created with sucess!');
+<% end %>

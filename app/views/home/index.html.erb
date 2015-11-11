@@ -1,0 +1,6 @@
+<% @posts.each do |post| %>
+<h1><%= post.title %><h4><%= post.created_at.strftime("%d/%m/%Y - %H:%M:%S") %> </h4></h1>
+<p><%= post.description.at(0...300) %> ... </p>
+<%= link_to 'Read more...', post %>
+<hr>
+<% end %>

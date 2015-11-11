@@ -1,0 +1,25 @@
+<h1><%= @post.title %></h1>
+<p>
+  <%= @post.description %>
+</p>
+
+<h2> Send Comment: </h2>
+<div id='feedback_create_comment' style='display:none;'>
+  <div class="alert fade in alert-success ">Comment was successfully created.</div>
+</div>
+<div id="form_comment">
+  <%= render 'form_comments' %>
+</div>
+
+<h2> Comments: </h2>
+<div id='box_comments'>
+  <div id='feedback_destroy_comment' style='display:none;'>
+    <div class="alert fade in alert-success ">Comment was successfully destroyed.</div>
+  </div>
+  <div id='count_comments'>
+    <h4><%= pluralize(@post.comments.size, " Comments") %></h4>
+  </div>
+  <div id='all_comments'>
+    <%= render 'show_comments' %>
+  </div>
+</div>
