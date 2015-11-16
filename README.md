@@ -10,4 +10,4 @@ Ruby On Rails - Comments with ajax (ADD/REMOVE) Ruby 2.1.5 - Rails 4.2.3 - Postg
 
 To use the project: bundle update / bundle install / rake db: create / rake db: migrate / rake db: seed
 
-Version online with Heroku: https://mini-blog-comments-with-ajax.herokuapp.com/
+Version oline with Heroku: <a href='https://mini-blog-comments-with-ajax.herokuapp.com/' target='_blank'> Mini Blog With Comments in Ajax </a>
